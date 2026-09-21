@@ -11,7 +11,7 @@ const ManageUsers = () => {
     const fetchUsers = async () => {
         try {
             setIsLoading(true);
-            const response = await apiClient.get<{ data: IUserBackend[] }>('/user');
+            const response = await apiClient.get<{ data: { items: IUserBackend[] } }>('/user');
              console.log("Usuarios obtenidos: ", response.data.data.items);
             const transformedUsers: IUser[] = (response.data.data.items || []).map(user => ({
                 id: user.id,

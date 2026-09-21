@@ -8,9 +8,8 @@ export const USER_ROLES = {
 } as const;
 
 export interface IUserBackend {
-    _id: string;
+    id: string;
     email: string;
-    password?: string;
     role: UserRole;
     name: string;
     lastName: string;
