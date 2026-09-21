@@ -27,7 +27,7 @@ Sistema de gestión de noticias con interfaz de usuario completa que incluye fun
 ### Requisitos previos
 
 - Node.js (versión 18 o superior)
-- npm, yarn o pnpm
+- pnpm (se activa con `corepack enable pnpm`)
 - Backend API corriendo (ver repositorio backend-noticias)
 
 ### Pasos de instalación
@@ -42,7 +42,7 @@ cd front-noticias
 2. Instalar dependencias
 
 ```bash
-npm install
+pnpm install
 ```
 
 3. Configurar variables de entorno
@@ -58,7 +58,7 @@ VITE_URL_HOST=https://api.produccion.com
 4. Iniciar el servidor de desarrollo
 
 ```bash
-npm run dev
+pnpm dev
 ```
 
 La aplicación estará disponible en `http://localhost:5173`.
@@ -67,10 +67,10 @@ La aplicación estará disponible en `http://localhost:5173`.
 
 ### Comandos disponibles
 
-- `npm run dev` - Inicia el servidor de desarrollo
-- `npm run build` - Compila el proyecto para producción
-- `npm run preview` - Previsualiza la build de producción
-- `npm run lint` - Ejecuta el linter
+- `pnpm dev` - Inicia el servidor de desarrollo
+- `pnpm build` - Compila el proyecto para producción
+- `pnpm preview` - Previsualiza la build de producción
+- `pnpm lint` - Ejecuta el linter
 
 ### Estructura del proyecto
 
